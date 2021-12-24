@@ -1,6 +1,7 @@
 CREATE TABLE `sap-product-master-class-class-details-data`
 (
-  `ClassInternalID`           varchar(10) DEFAULT NULL,
+  `ClassInternalID`           varchar(10) NOT NULL,
+  `KeyDate`                   date DEFAULT NOT NULL,
   `ClassType`                 varchar(3) DEFAULT NULL,
   `ClassTypeName`             varchar(40) DEFAULT NULL,
   `Class`                     varchar(18) DEFAULT NULL,
@@ -13,8 +14,7 @@ CREATE TABLE `sap-product-master-class-class-details-data`
   `ValidityStartDate`         date DEFAULT NULL,
   `ValidityEndDate`           date DEFAULT NULL,
   `ClassLastChangedDateTime`  datetime DEFAULT NULL,
-  `KeyDate`                   date DEFAULT NULL,
-  PRIMARY KEY (`ClassInternalID`),
+  PRIMARY KEY (`ClassInternalID`, `KeyDate`),
   CONSTRAINT (`ClassInternalID_fk`) FOREIGN KEY (`ClassInternalID`) REFERENCES `sap-product-master-class-product-class-data` (`ClassInternalID`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

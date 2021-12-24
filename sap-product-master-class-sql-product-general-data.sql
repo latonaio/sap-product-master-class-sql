@@ -1,6 +1,6 @@
-CREATE TABLE `sap-product-master-class-general-data`
+CREATE TABLE `sap-product-master-class-product-general-data`
 (
-  `Product`               varchar(40) DEFAULT NULL,
+  `Product`               varchar(40) NOT NULL,
   `ProductType`           varchar(4) DEFAULT NULL,
   `CreationDate`          date DEFAULT NULL,
   `LastChangeDate`        date DEFAULT NULL,
