@@ -15,7 +15,7 @@ sap-product-master-class-sql には、sqlの設定ファイルとして、以下
 
 * sap-product-master-class-sql-general-data.sql（SAP 品目マスタクラス - 一般データ）
 * sap-product-master-class-sql-product-class-data.sql（SAP 品目マスタクラス - 品目クラスデータ）
-* sap-product-master-class-sql-product-class-details-data.sql（SAP 品目マスタクラス - 品目クラス詳細データ）
+* sap-product-master-class-sql-product-class-details-data.sql（SAP 品目マスタクラス - クラス詳細データ）
 * sap-product-master-class-sql-product-characteristic-data.sql（SAP 品目マスタクラス - 品目特性データ）
 
 
