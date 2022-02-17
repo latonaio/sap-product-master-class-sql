@@ -7,6 +7,6 @@ CREATE TABLE `sap_product_master_class_product_characteristic_data`
   `ChangeNumber`         varchar(12) DEFAULT NULL,
   `ClassType`            varchar(3) DEFAULT NULL,
   PRIMARY KEY (`Product`, `ClassInternalID`, `CharcInternalID`, `KeyDate`),
-  CONSTRAINT (`SAPProductMasterClassProductCharacteristicData_fk`) FOREIGN KEY (`Product`) REFERENCES `sap_product_master_class_product_general_data` (`Product`)
+  CONSTRAINT `SAPProductMasterClassProductCharacteristicData_fk` FOREIGN KEY (`Product`) REFERENCES `sap_product_master_class_product_general_data` (`Product`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
